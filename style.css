@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)),
+    url('./img/csgo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    object-fit: cover;
+    color: wheat;
+
+}
+header{
+    background-color: rgb(14, 17, 27);
+    color:whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header img{
+    width: 100px;
+}
+header h1{
+    padding: 20px;
+}
+label img{
+    width: 50px;
+
+}
+label{
+    
+    padding: 15px ;
+    position: fixed;
+    z-index: 1;
+}
+nav.menu ul{
+    list-style: none;
+    top: 75px;
+    position: absolute;
+    width: 100%;
+}
+input[type="checkbox"]
+{
+display: none;
+position: fixed;
+
+}
+nav.menu {
+background:linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("./img/csico.png");
+background-repeat: no-repeat;
+background-position: center;
+width: 350px;
+left: -350px;
+opacity: 1;
+height: 100vh;
+position: absolute;
+transition: all 0.5s;
+color: thistle;
+position: fixed;
+
+}
+nav.menu li{
+    padding: 20px 20px;
+}
+nav.menu a{
+    display: block;
+    padding: 15px 5px;
+    color: wheat;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+    
+    
+}
+nav.menu a:hover{
+    background-color: rgb(66, 76, 161);
+    color: black;
+}
+
+input[type="checkbox"]:checked ~ nav
+{
+    transform: translateX(350px);
+}
+
+/* edição do 1 primeiro section*/
+section.oque{
+    color: wheat;
+    width: 90%;
+    height:80vh;
+    margin-top: 20%;
+    text-align: center;
+}
+section.oque p{
+   width: 90%;
+   padding: 20px;
+   margin-left:7%;
+    text-align: center;
+    font-size: 20px;
+}
+section.oque h1{
+    font-size: 3em;
+}
+
+section.figura figure{
+    border: thick solid wheat;
+    margin-left: 7%;
+    margin-top: -90px;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 250px;
+}
+section.figura figcaption{
+    color: wheat;
+    text-align: center;
+}
+
+section.como{
+    margin-top: 90px;
+    text-align: center;
+    width: 80%;
+    height:90vh
+
+}
+section.como p{
+    width: 80%;
+    font-size: 20px;
+    margin-top: 10%;
+
+}
+section.como h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+section.passo{
+    text-align: center;
+    width: 90%;
+
+}
+
+section.passo a{
+    text-decoration: none;
+    color: rgb(223, 182, 51);
+
+}
+section.passosJogo h1{
+    text-align: center;
+    width: 70%;
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+section.passo p{
+    font-size: 20px;
+}
+figure{
+    border: thick solid wheat;
+    margin-left:20%;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    width: 550px;
+}
+
+figcaption{
+    color: wheat;
+    text-align: center;
+}
+
+section.lista{
+    text-align: center;
+    height: 80vh;
+    margin-top: 150px;
+    width: 80%;
+}
+section.lista table{
+    margin-left: 35%;
+    border: 2px solid wheat;
+}
+section.lista h2{
+    text-align: center;
+    margin-left:250px;
+    margin-bottom: 40px;
+    font-size: 3em;
+}
+
+section.lista th, td{
+    border: 3px solid wheat;
+    padding: 10px;
+}
+
+/*section das armas*/
+
+section.armas{
+    text-align: center;
+    height: 80vh;
+    margin-top: 350px;
+    
+}
+
+section.armas h1{
+    font-size: 2em;
+    
+}
+section.armas ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
+    
+    
+}
+section.armas li{
+    list-style: none;
+    -webkit-transition: all .4s ease-in;
+    border: 2px solid rgb(86, 92, 30);
+    cursor: pointer;
+}
+
+section.armas li:hover{
+    background-color: rgb(127, 135, 245);
+    -webkit-transform: scale(1.5);
+}
+article{
+    width: 400px;
+    float: right;
+    margin-top: -150px;
+    border: 3px solid rgb(223, 182, 51);
+}
+
+
+/*aside*/
+
+aside {
+    float: right;
+    height: 100%;
+    margin-top: -3850px;
+    
+    color: rgb(223, 182, 51);
+    background-color: rgba(0, 0, 0, .5);
+}
+
+aside h3, h2{
+    margin-bottom: 40px;
+}
+
+aside h3{
+    margin-top: 10px;
+}
+
+/*footer*/
+
+footer.rodape{
+    margin-top: 500px;
+    text-align: center;
+    margin-left: 40%;
+
+}
+footer.rodape ul{
+    display: flex;
+    align-items: center;
+}
+
+footer.rodape li{
+    font-size: 40px;
+    list-style: none;
+    width: 100px;
+   
+}
+
+footer.rodape a{
+    color: aliceblue;
+    
+}
+footer.rodape a:hover{
+    text-decoration: none;
+    text-shadow: 0px 0px 10px whitesmoke;
+}
+
+footer.rodape p{
+    margin-left: -200px;
+    margin-right: 300px;
+    font-size: 20px;
+    text-align: center;
+}
+tbody.principalt{
+    background-color: rgb(194, 173, 103);
+}
